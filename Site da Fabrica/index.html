@@ -54,7 +54,7 @@
       <a href="Sobre" class="hover:underline">Sobre a Fabrica</a>
       <a href="Projetos" class="hover:underline">Projetos</a>
       <a href="Contato" class="hover:underline">contato</a>
-      <a href="./cadastro.html" class="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded">
+      <a href="./cadastro.html" target="_blank" class="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded">
         Inscreva-se
       </a>
     </div>
@@ -121,7 +121,6 @@
         <img src="./img/mountain-clouds-night-lake-digital-art-scenery-hd-wallpaper-uhdpaper.com-650@2@b.jpg" class="d-block w-100" alt="Imagem 3">
       </div>
 
-      <!-- 🔁 DICA: Substitua os links das imagens (src="...") pelas URLs ou caminhos locais das suas imagens -->
     </div>
 
     <!-- Botões de navegação do carrossel -->
@@ -149,8 +148,8 @@
 
       <!-- Coluna de imagem -->
       <div class="col-md-6">
-        <!-- 🔁 Substitua a imagem abaixo por uma real (link ou arquivo local) -->
-        <img src="./img/sports-car-futuristic-mountain-sunset-scenery-digital-art-hd-wallpaper-uhdpaper.com-537@0@i.jpg" style="width: 500px; height: 500px;" alt="Foto da Fábrica de Software UniSales" class="img-fluid rounded shadow">
+      
+        <img src="./img/sports-car-futuristic-mountain-sunset-scenery-digital-art-hd-wallpaper-uhdpaper.com-537@0@i.jpg" style="width: 500px; height: 300px; position:relative; left: 100px;" alt="Foto da Fábrica de Software UniSales" class="img-fluid rounded shadow">
       </div>
 
     </div>
@@ -191,32 +190,82 @@
     </div>
   </section>
 
-  <!-- Seção Contato -->
-  <section id="contato" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-4">Contato</h2>
+  <section id="quem-somos" style="background-color: #f5f5f5; padding: 50px 20px;">
+  <div style="max-width: 1200px; margin: auto; text-align: center;">
+    <h2 style="font-size: 32px; margin-bottom: 20px;">Quem Somos</h2>
+    <p style="font-size: 18px; color: #555;">Conheça a equipe responsável pela Fábrica de Software</p>
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
+      
+      <!-- Membro 1 -->
+      <div style="background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 250px; padding: 20px;">
+        <img src="./img/ocean-car-floating-full-moon-scenery-digital-art-hd-wallpaper-uhdpaper.com-664@0@j.jpg" alt="Nome Membro 1" style="width: 100%; border-radius: 8px;">
+        <h3 style="margin: 15px 0 5px;">João Silva</h3>
+        <p style="color: #888;">Desenvolvedor Full Stack</p>
+      </div>
+
+      <!-- Membro 2 -->
+      <div style="background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 250px; padding: 20px;">
+        <img src="./img/pirate-ship-island-digital-art-hd-wallpaper-uhdpaper.com-659@2@b.jpg" alt="Nome Membro 2" style="width: 100%; border-radius: 8px;">
+        <h3 style="margin: 15px 0 5px;">Maria Costa</h3>
+        <p style="color: #888;">UX/UI Designer</p>
+      </div>
+
+      <!-- Membro 3 -->
+      <div style="background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 250px; padding: 20px;">
+        <img src="./img/pokemon-ball-house-anime-digital-art-hd-wallpaper-uhdpaper.com-68@1@o.jpg" alt="Nome Membro 3" style="width: 100%; border-radius: 8px;">
+        <h3 style="margin: 15px 0 5px;">Carlos Souza</h3>
+        <p style="color: #888;">Gerente de Projetos</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-900 text-white py-10">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <!-- Logo e redes sociais -->
+    <div>
+      <p class="font-semibold text-lg mb-4">© 2025 Fábrica de Software UniSales</p>
+      <div class="flex space-x-4">
+        <a href="https://www.instagram.com/unisalesoficial/" ><img src="./img/instagram.png" class="h-6 w-6" alt="Instagram"></a>
+        <a href="https://www.youtube.com/c/UniSalesOficial" target="_blank"><img src="./img/youtube.png" class="h-6 w-6" alt="youtube"></a>
+        <a href="https://x.com/unisalesoficial" target="_blank"><img src="./img/twitter-x.svg" class="h-6 w-6" alt="twitter"></a>
+        <a href="https://unisales.br/" target="_blank"><img src="./img/Logo unisales.png"  class="h-6 w-6" alt="site"></a>
+      </div>
+    </div>
+
+    <!-- Contato -->
+    <div>
+      <h4 class="font-semibold mb-2">Contato</h4>
       <p>Email: fabricadesoftware@unisales.br</p>
       <p>Endereço: Av. Vitória, 1234 - Vitória, ES</p>
     </div>
-  </section>
 
-  <!-- Rodapé -->
-  <footer class="bg-dark text-white py-4">
-  <div class="container text-center">
-    <p>© 2025 Fábrica de Software UniSales</p>
+    <!-- Links institucionais  -->
     <div>
-      <a href="https://www.linkedin.com/school/unisales/" target="_blank" class="text-white mx-2" aria-label="LinkedIn UniSales">
-        <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
-      </a>
-      <a href="https://www.instagram.com/unisales/" target="_blank" class="text-white mx-2" aria-label="Instagram UniSales">
-        <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
-      </a>
-      <a href="https://unisales.edu.br" target="_blank" class="text-white mx-2" aria-label="Site UniSales">
-        <i class="bi bi-globe" style="font-size: 1.5rem;"></i>
-      </a>
+      <h4 class="font-semibold mb-2">Institucional</h4>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:underline">Sobre</a></li>
+        <li><a href="#" class="hover:underline">Projetos</a></li>
+        <li><a href="#" class="hover:underline">Equipe</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter (opcional) -->
+    <div>
+      <h4 class="font-semibold mb-2">Receba atualizações</h4>
+      <input type="email" placeholder="Seu email" class="p-2 rounded text-black w-full mb-2">
+      <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded w-full">Enviar</button>
     </div>
   </div>
 </footer>
+
 
 
   <!-- Bootstrap JS Bundle com Popper -->
