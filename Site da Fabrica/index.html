@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fábrica de Software - UniSales</title>
+
+  <link rel="stylesheet" href="Style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+  <!-- Barra de Navegação -->
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar UniSales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+  <!-- Navbar -->
+  <nav class="bg-[#1A1F71] text-white px-4 py-3 shadow-md flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center space-x-4">
+    <img src="./img/UniSales_logo_no_bg.png" alt="Logo UniSales" style="height: 100px;">
+
+      <span class="text-xl font-bold">Fábrica de Software</span>
+    </div>
+
+    <!-- Campo de Pesquisa -->
+    <div class="hidden md:flex items-center space-x-2 bg-white rounded-md px-2 py-1 text-black">
+      <input
+        type="text"
+        placeholder="Pesquisar..."
+        class="outline-none bg-transparent px-2 py-1 w-64"
+      />
+      <button>
+        <svg class="h-5 w-5 text-[#1A1F71]" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd"
+            d="M12.9 14.32a8 8 0 111.414-1.414l4.386 4.386a1 1 0 01-1.414 1.414l-4.386-4.386zM14 8a6 6 0 11-12 0 6 6 0 0112 0z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menu -->
+    <div class="hidden md:flex space-x-6 items-center">
+      <a href="Sobre" class="hover:underline">Sobre a Fabrica</a>
+      <a href="Projetos" class="hover:underline">Projetos</a>
+      <a href="Contato" class="hover:underline">contato</a>
+      <a href="./cadastro.html" class="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded">
+        Inscreva-se
+      </a>
+    </div>
+
+    <!-- Botão Mobile -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="focus:outline-none">
+        <svg class="h-6 w-6" fill="none" stroke="white" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu Mobile (inicialmente escondido) -->
+  <div id="mobile-menu" class="md:hidden hidden bg-[#1A1F71] text-white px-4 py-4 space-y-2">
+    <input
+      type="text"
+      placeholder="Pesquisar..."
+      class="w-full px-3 py-2 rounded text-black"
+    />
+    <a href="#" class="block hover:underline">Cursos</a>
+    <a href="#" class="block hover:underline">Diferenciais</a>
+    <a href="#" class="block hover:underline">Como Ingressar</a>
+    <a href="#" class="block bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded mt-2 text-center">
+      Inscreva-se
+    </a>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
+
+
+  <!-- Carrossel de Imagens -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <!-- IMAGEM 1 - Substitua o link abaixo pela imagem desejada -->
+      <div class="carousel-item active">
+        <img src="./img/adventure-time-tree-house-sunset-scenery-hd-wallpaper-uhdpaper.com-370@3@b.jpg" class="d-block w-100" alt="Imagem 1">
+      </div>
+
+      <!-- IMAGEM 2 -->
+      <div class="carousel-item">
+        <img src="./img/moon-palm-trees-synthwave-hd-wallpaper-uhdpaper.com-215@0@k.jpg" class="d-block w-100" alt="Imagem 2">
+      </div>
+
+      <!-- IMAGEM 3 -->
+      <div class="carousel-item">
+        <img src="./img/mountain-clouds-night-lake-digital-art-scenery-hd-wallpaper-uhdpaper.com-650@2@b.jpg" class="d-block w-100" alt="Imagem 3">
+      </div>
+
+      <!-- 🔁 DICA: Substitua os links das imagens (src="...") pelas URLs ou caminhos locais das suas imagens -->
+    </div>
+
+    <!-- Botões de navegação do carrossel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Seção Sobre -->
+  <section id="sobre" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4">Sobre a Fábrica</h2>
+    <div class="row align-items-center">
+      
+      <!-- Coluna de texto -->
+      <div class="col-md-6">
+        <p>
+          A Fábrica de Software UniSales é um ambiente colaborativo onde alunos desenvolvem soluções reais para empresas e comunidades.
+          O projeto oferece uma experiência prática que complementa a formação acadêmica, conectando teoria e prática com foco na inovação.
+        </p>
+      </div>
+
+      <!-- Coluna de imagem -->
+      <div class="col-md-6">
+        <!-- 🔁 Substitua a imagem abaixo por uma real (link ou arquivo local) -->
+        <img src="./img/sports-car-futuristic-mountain-sunset-scenery-digital-art-hd-wallpaper-uhdpaper.com-537@0@i.jpg" style="width: 500px; height: 500px;" alt="Foto da Fábrica de Software UniSales" class="img-fluid rounded shadow">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Seção Projetos -->
+  <section id="projetos" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Projetos Recentes</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 1</h5>
+              <p class="card-text">Sistema de agendamento para clínicas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 2</h5>
+              <p class="card-text">Aplicativo de mapeamento de serviços sociais.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 3</h5>
+              <p class="card-text">Plataforma educacional gamificada.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Contato</h2>
+      <p>Email: fabricadesoftware@unisales.br</p>
+      <p>Endereço: Av. Vitória, 1234 - Vitória, ES</p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p>© 2025 Fábrica de Software UniSales</p>
+    <div>
+      <a href="https://www.linkedin.com/school/unisales/" target="_blank" class="text-white mx-2" aria-label="LinkedIn UniSales">
+        <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+      </a>
+      <a href="https://www.instagram.com/unisales/" target="_blank" class="text-white mx-2" aria-label="Instagram UniSales">
+        <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+      </a>
+      <a href="https://unisales.edu.br" target="_blank" class="text-white mx-2" aria-label="Site UniSales">
+        <i class="bi bi-globe" style="font-size: 1.5rem;"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap JS Bundle com Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
